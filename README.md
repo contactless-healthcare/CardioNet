@@ -1,5 +1,5 @@
 # Dataset Description
-This repository contains the dataset for the paper: **"Cardiac 3D Mechanical and Electrical Signal Reconstruction via Defocused Speckle Imaging"**. 
+This repository contains the dataset for the paper: **"[Cardiac 3D Mechanical and Electrical Signal Reconstruction via Defocused Speckle Imaging](https://ieeexplore.ieee.org/abstract/document/11551354)"**. 
 
 It provides dual-camera Defocused Speckle Imaging (DSI) videos and cardiac signals. The dataset is collected from two distinct cohorts to ensure robustness and clinical relevance.
 
@@ -67,4 +67,16 @@ scg_reconstructed = subject_data['SCG_g'] # shape: (N_cycles, 500)
 raw_lengths = subject_data['ECG_Raw']     # shape: (N_cycles,)
 
 print(f"Number of cardiac cycles: {ecg_ref.shape[0]}")
+```
+
+# Citing this work
+Please cite the following paper if you find our code helpful.
+```
+@article{xia2026cardiac,
+  title={Cardiac 3D Mechanical and Electrical Signal Reconstruction via Defocused Speckle Imaging},
+  author={Xia, Ming and Liu, Lin and Zhao, Ningbo and Luo, Zi and Shan, Caifeng and Wang, Wenjin},
+  journal={IEEE Transactions on Biomedical Engineering},
+  year={2026},
+  publisher={IEEE}
+}
 ```
